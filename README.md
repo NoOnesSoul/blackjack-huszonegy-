@@ -11,4 +11,5 @@ Ezeket a szabályokat és egyebeket [itt](https://hu.wikipedia.org/wiki/Huszoneg
 Ez a projekt egy jó lehetőség volt számomra, hogy kipróbáljam/gyakoroljam az objektum orientált programozást.
 
 Projekt kezdete: 2022.11.14
+
 Frissítve/befejezve(?): 2022.11.16
