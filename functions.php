@@ -111,7 +111,23 @@ function getWinner($com, $usr) {
     switch ($usr) {
         case 21:
             if(sizeof($_SESSION['usrCards']) == 2) {
-                $message = "You win";
+                if($usr == $com) {
+                    if(sizeof($_SESSION['comCards']) == 2) {
+                        $message = "Draw";
+                    } else {
+                        $message = "You win";
+                    }
+                }
+            } else {
+                if($com == $usr) {
+                    if(sizeof($_SESSION['comCards']) == 2) {
+                        $message = "You lose";
+                    } else {
+                        $message = "Draw";
+                    }
+                } else {
+                    $message = "You win";
+                }
             }
             break;
         default:
