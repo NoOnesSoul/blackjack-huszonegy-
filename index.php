@@ -39,7 +39,7 @@ if(getPoint('usr') >= 21) {
         <center>
             <div class="tab">
                 <div class="tab">
-                <h2>Dealer(com): <?php echo getPoint('com'); ?></h2>
+                <h2>Dealer(com): <?php if ($_SESSION['state'] == "end") {echo getPoint('com');} else {echo "?";} ?></h2>
                 <?php for($i = 0; $i <= sizeof($_SESSION['comCards'])-1; $i++) {
                     include "comCard.php";
                 } ?>
