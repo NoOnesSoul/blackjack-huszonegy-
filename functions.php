@@ -78,7 +78,6 @@ function getPoint($player) {
     switch ($player) {
         case 'com':
             for($i=0; $i <= sizeof($_SESSION['comCards'])-1; $i++) {
-                if($_SESSION['comCards'][$i]->shown != "hiddencard") {
                     if($_SESSION['comCards'][$i]->value == "A") {
                         if($points <= 10) {
                             $points += $_SESSION['comCards'][$i]->realvalue['much'];
@@ -88,7 +87,6 @@ function getPoint($player) {
                     } else {
                         $points += $_SESSION['comCards'][$i]->realvalue;
                     }
-                }
             }
             break;
         case 'usr':
