@@ -20,7 +20,8 @@
 }
 
 .cardColor {
-    height: 50px;
+    height: 3vw;
+    padding-top: 0.4vw;
 }
 
 input {
