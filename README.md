@@ -14,4 +14,4 @@ Még várható frissítés (splitet tervezem beleírni).
 
 Projekt kezdete: 2022.11.14
 
-Frissítve: 2022.11.17
+Frissítve: 2022.11.19
