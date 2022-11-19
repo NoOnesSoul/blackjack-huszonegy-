@@ -37,12 +37,13 @@ if(getPoint('usr') >= 21) {
     </head>
     <body>
         <center>
-            <div class="tab">
+            <div class="table">
+                <?php if($_SESSION['state'] == "end") {echo action('end');} ?>
                 <div class="tab">
                 <h2>Dealer(com): <?php if ($_SESSION['state'] == "end") {echo getPoint('com');} else {echo "?";} ?></h2>
                 <?php for($i = 0; $i <= sizeof($_SESSION['comCards'])-1; $i++) {
                     include "comCard.php";
-                } ?>
+                } ?> 
             </div>
             <br />
             <div class="tab">
@@ -59,6 +60,8 @@ if(getPoint('usr') >= 21) {
                 <?php } ?>
                     <input type="submit" name="new" value="Start new game">
                 </form>
+                <br />
+                <?php include "rules.html" ?>
             </div>
         </center>
     </body>
