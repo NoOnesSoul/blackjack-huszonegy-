@@ -29,6 +29,7 @@ input {
     border-radius: 30px;
     background-color: green;
     color: yellow;
+    padding: 5px;
 }
 
 input:hover {
@@ -40,7 +41,7 @@ input:hover {
     border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
-    width: fit-content;
+    width: auto;
 }
 
 .message {
@@ -49,4 +50,12 @@ input:hover {
     padding: 0px;
     padding-left: 15px;
     color: yellow;
+}
+
+.table {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 35vw;
+    display: inline-block;
 }
