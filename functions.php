@@ -117,6 +117,8 @@ function getWinner($com, $usr) {
                     } else {
                         $message = "You win";
                     }
+                } else {
+                    $message = "You win";   
                 }
             } else {
                 if($com == $usr) {
