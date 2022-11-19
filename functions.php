@@ -64,7 +64,7 @@ function action($state) {
             action($_SESSION['state']);
             break;
         case 'end':
-            echo "<div class='tab message'><h1>".getWinner(getPoint('com'), getPoint('usr'))."</h1></div>";
+            return "<div class='tab message'><h1>".getWinner(getPoint('com'), getPoint('usr'))."</h1></div><br />";
             break;
         case 'new':
             session_unset();
@@ -118,7 +118,7 @@ function getWinner($com, $usr) {
                         $message = "You win";
                     }
                 } else {
-                    $message = "You win";   
+                    $message = "You win";
                 }
             } else {
                 if($com == $usr) {
